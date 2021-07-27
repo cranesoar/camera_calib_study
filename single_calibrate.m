@@ -4,7 +4,7 @@
 %      'calibration', 'slr'));
 %READSIZE = 5;
 %images = imageDatastore('/home/cranesoar/Documents/calibrate dataset/Calibration Dataset','ReadSize', READSIZE);
-images = imageDatastore('/home/cranesoar/Documents/calibrate dataset/Calibration Dataset','ReadSize', READSIZE);
+images = imageDatastore('./Calibration Dataset/single camera');
 %% 
 [imagePoints,boardSize] = detectCheckerboardPoints(images.Files);
   %% set square size 'mm'
